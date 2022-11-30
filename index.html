@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Translater</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+	<div class="translateArea">
+		<div class="leftArea">
+			<select class="languageOptions">
+				<option selected value="">Türkçe</option>
+				<option value="">İngilizce</option>
+			</select>
+			<textarea placeholder="Enter text..."></textarea>
+		</div>
+		<!--<img onclick="translateText()" class="translateButton" src="https://www.svgrepo.com/show/217134/translate-language.svg" alt="">-->
+		<div class="rightArea">
+			<select class="languageOptions">
+				<option selected value="ingilizce">İngilizce</option>
+				<option value="türkçe">Türkçe</option>
+			</select>
+			<textarea disabled></textarea>
+		</div>
+	</div>
+	<script>
+		document.addEventListener("keypress", (e) => { //TODO TESTING
+			document.querySelector(".rightArea textarea").value = "Hi";
+		});
+	</script>
+</body>
+
+</html>
